@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+
+/*
+    em HTML é id em CSS pe #
+    em HTML é class em css é .
+*/
+
+/* ID uso único
+    . /classe mais de um 
+    <span> para expandir um trecho para dentro de uma classe
+    */
+
+    /*aplicada por ultimo é a que vale*/
+
+
+body{
+    background-color: rgba(213, 243, 168, 0.664);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: greenyellow;
+    font-weight: bold;
+}
+
+h1#principal{   /*Identificar qual h estamos usando com # e o id*/
+    text-align: center;
+    background-color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+h2{
+    color: rgb(89, 146, 5);
+
+}
+
+.p1{
+    color: red;
+}
+
+.p2{
+    color: blue;
+}
+
+.destaque{     /*É possivel colocar um elemento em duas class diferentes*/
+    background-color: blueviolet;
+
+}

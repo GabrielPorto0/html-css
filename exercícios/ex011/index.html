@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+   
+
+</head>
+<body>
+    
+       <h1>adaptação de imagens com tamanho diferente</h1>
+     <p>Tente abrir esse site em vários disposiveis diferentes ou simplesmente aumente e deiminua o tamanho do seu computador</p>
+
+
+       <!-- picture é praticamente  o Image mas voce coloca fotos de tamanhos diferentes para dispositivos de tela diferente-->
+
+
+
+      <!-- com o codigo source é possivel declarar qual imagem queremos que mostre dependendo do tamanho da tela da pessoa, definido em pixels, sempre declarar o <source> do menor para maior-->
+        <hr>
+        <picture>
+     <source media="(max-width: 750px)" srcset="imagens/fotop.png">
+     <source media="(max-width:1050px )" srcset="imagens/fotom.png">
+        <img src="imagens/fotog.png" alt="imagem flexivel">
+     </picture>
+
+        <hr>
+
+        <h1>Reproduzindo audio</h1>
+        <p>Como reproduzir audios em html5</p>
+
+   
+        <!--Para colocar aúdios é  só usar a tag audio, depois do diretorio é só colocar os parametros desejadors, como controls e autoplay-->
+
+        <audio src="midia/jingle.mp3" controls></audio>
+       
+
+        <!-- para ter compatibildade com todos os navegadores, temos que colocar audios em MP3-WAV-OGG-->
+
+
+      <!-- mesma coisa com a imagem, declarar tipos diferente de audio, pq depende do navegador da pessoa -->
+
+      <audio controls>
+
+        <source src="midia/jingle.mp3" type="audio/mpeg">
+        <source src="midia/jingle.ogg" type="audio,ogg">
+
+        <p>Infelizmente seu navegador não consegue reproduzir audios.</a></p>
+
+       </audio>
+
+       
+
+
+
+
+    
+</body>
+</html>

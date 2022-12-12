@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML</title>
+</head>
+<body>
+
+    <h1>Videos em HTML hospedados localmente</h1>
+
+    <p>Aqui aprenderemos a adicionar vídeos no seu site</p>
+
+
+    <!-- não esquecer de usar tipos de video diferente e declarar o tamanho desejado em width, poster é para definir a thumb do vídeo -->
+
+    <video width="500"  poster="thumbshine.jpeg" controls loop>
+        
+        <source src="videos/spektrem-shine-ncs-release.m4v"type="video/m4v">
+        <source src="videos/spektrem-shine-ncs-release.mp4" type="video/mp4">
+        <source src="videos/spektrem-shine-ncs-release.webm" type="video/webm">
+
+    </video>
+
+    <h1>Inserindo vídeos do youtube</h1>
+
+    <!--Copiar codigo deo vídeo fornecido pela plataforma vime/youtube-->
+
+    <h2>Abertura de dororo</h2>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/FgQR2O8PGf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Abertura de overlord</h2>
+
+    <iframe src="https://player.vimeo.com/video/132846010?h=ac5ae80404&loop=1" width="500" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+    
+</body>
+</html>

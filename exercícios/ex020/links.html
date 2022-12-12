@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*      SELETORES PERSONALIZADOS
+
+        #    = id
+        :    = pseudo-class
+        ::   = pseudo-element 
+        >    = children
+
+        */
+
+        body{
+            font-family: sans-serif;
+        }
+
+        a{
+            color:red ;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{  /*link já visitado*/
+            color: green;
+        }
+
+        a:hover{   /*passando o mouse por cima*/
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{ /*clicando */
+            color: yellow;
+        }
+
+        /*É possivel configurar pseudo elementos usando classes*/
+
+
+        .especial::before{
+            content: "☛";
+            color: gray;
+
+        }
+        .especial::after{   /*Pseudo elemento definimos com ::*/
+            content: "☚";
+            color: gray;
+        }
+
+        .especial{
+            background-color: rgba(255, 0, 0, 0.425);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Github</a></li>
+
+        <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" class="especial">Canal do youtube</a></li>
+
+        <li><a href="https://www.cursoemvideo.com/" target="blank">Site do curso em video</a></li>
+    </ul>
+</body>
+</html>
